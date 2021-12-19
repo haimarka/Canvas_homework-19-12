@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="firstSquere"></canvas>
+    <script>
+        const canvas = document.getElementById("firstSquere");
+        const context = canvas.getContext("2d");
+        canvas.height = innerHeight;
+        canvas.width = innerWidth;
+
+        //     context.fillStyle = "black";
+        //     context.fillRect(100, 100, 50, 50);
+
+        //     context.fillStyle = "red";
+        //     context.fillRect(200, 100, 70, 70);
+
+        //     // ctx.arc(x, y, radius, startAngle, endAngle, counterclockwise);
+        //     context.beginPath();
+        //     context.fillStyle = "red"
+        //     context.lineWidth = "6"
+        //     context.strokeStyle = "blue"
+        //     context.arc(180, 40, 30, 0, 360);
+        //     context.stroke();
+        //     context.fill()
+        //     context.closePath();
+
+        //     context.beginPath();
+        //     context.arc(200, 400, 50, 0, 360);
+        //     context.fillStyle = "blue"
+        //     context.lineWidth = "6"
+        //     context.strokeStyle = "red"
+        //     context.stroke();
+        //     context.fill();
+        //     context.closePath();
+
+        //     context.beginPath();
+        //     context.fillStyle = "green";
+        //     context.lineWidth = "6"
+        //     context.arc(200, 250, 40, 0, 360);
+        //     context.arc(300, 250, 40, 0, 360);
+        //     context.strokeStyle = "purple"
+        //     context.stroke();
+        //     context.fill();
+        //     context.closePath()
+
+        //     let y = 0;
+        //     const timer = setInterval(() => {
+        //         // console.log(y);
+        //         context.clearRect(400, y, 70, 70)
+        //         context.clearRect(600, y, 70, 70)
+        //         context.clearRect(800, y, 70, 70)
+        //         y += 20;
+        //         context.fillStyle = "purple";
+        //         context.fillRect(400, y, 70, 70);
+        //         context.fillStyle = "green";
+        //         context.fillRect(600, y, 70, 70);
+        //         context.fillStyle = "blue";
+        //         context.fillRect(800, y, 70, 70);
+        //         if (y >= canvas.height - 205) clearInterval(timer)
+        //     }, 500)
+
+        //     const floor = {
+        //         x: 0,
+        //         y: 600,
+        //         width: canvas.width,
+        //         height: 100
+        //     };
+
+        //     context.fillStyle = "green";
+        //     context.fillRect(floor.x, floor.y, floor.width, floor.height);
+
+        // const player = {
+        //     x: 100,
+        //     y: 550,
+        //     width: 150,
+        //     height: 100
+        // }
+        // context.fillStyle = "yellow";
+        // context.fillRect(player.x, player.y, player.width, player.height);
+
+        //     jump = () => {
+        //         let y = player.y;
+        //         const firstJump = setInterval(() => {
+        //         context.clearRect(player.x, y, player.width, player.height);
+        //         y -= 20;
+        //         context.fillStyle = "yellow";
+        //         context.fillRect(player.x, y, player.width, player.height);
+
+        //         if(y == 520){
+        //         clearInterval(firstJump)
+        //             setTimeout(()=>{
+        //             context.clearRect(player.x, y, player.width, player.height);
+        //             context.fillStyle = "yellow";
+        //             context.fillRect(player.x, player.y, player.width, player.height);
+        //         },500)
+        //         }
+        //     }, 500);
+        // }
+
+        // document.addEventListener("keyup", jump)
+
+
+        // context.fillStyle = "lightgreen";
+        // for (let i = 0; i < 10; i++) {
+        //     let a = Math.floor(Math.random() * canvas.width)-50
+        //     let b = Math.floor(Math.random() * canvas.height)-50
+        //     context.fillRect(a<50?0:a,
+        //     b<50?0:b,
+        //       50, 50)
+        // }
+
+        // context.fillStyle = "green";
+        // for (let i = 0; i < 10; i++) {
+        //     context.beginPath();
+        //     // context.strokeStyle = "purple";
+        //     // context.lineWidth = "6";
+        //     let a = Math.floor(Math.random() * canvas.width) - 100
+        //     let b = Math.floor(Math.random() * canvas.height) - 100
+        //     context.arc(a < 300 ? 0 : a,
+        //         b < 300 ? 0 : b,
+        //         Math.floor(Math.random() * 100), 0, 360)
+        //     context.closePath();
+        //     context.fill();
+        // }
+
+        // let array = ["green","yellow","orange","blue","red","black","pink","purple"];
+        // for (let i = 0; i < 10; i++) {
+        //     context.fillStyle = array[Math.floor(Math.random()* 8)];
+        //     context.fillRect(
+        //         Math.floor(Math.random()*canvas.width) -50,
+        //         Math.floor(Math.random()*canvas.height) -50,
+        //     50,
+        //     50);
+        // };
+
+        // context.beginPath();
+        // context.fillStyle = "brown"
+        // context.arc(700,300,200,0,360)
+        // context.closePath();
+        // context.fill();
+        // context.beginPath();
+        // context.fillStyle = "white"
+        // context.arc(600,250,50,0,360)
+        // context.closePath();
+        // context.fill();
+        // context.beginPath();
+        // context.fillStyle = "white"
+        // context.arc(800,250,50,0,360)
+        // context.closePath();
+        // context.fill();
+        // context.beginPath();
+        // context.fillStyle = "black"
+        // context.arc(800,250,20,0,360)
+        // context.closePath();
+        // context.fill();
+        // context.beginPath();
+        // context.fillStyle = "black"
+        // context.arc(600,250,20,0,360)
+        // context.closePath();
+        // context.fill();
+        // context.beginPath();
+        // context.lineWidth = "3"
+        // context.arc(700,380,100,0,Math.PI)
+        // context.stroke()
+        // context.closePath();
+        
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
